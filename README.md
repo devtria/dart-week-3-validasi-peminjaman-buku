@@ -69,4 +69,53 @@ Hasilnya adalah Rp3.000.
 Dengan menerapkan Computational Thinking, masalah yang awalnya terlihat seperti satu masalah besar dapat dipecah menjadi beberapa bagian yang lebih sederhana. Setiap bagian kemudian dapat dibuat menjadi logika program yang jelas, terstruktur, dan lebih mudah dipahami.
 
 ## Flowchart
-<img width="1024" height="1536" alt="Diagram Alur Sistem Peminjaman Buku" src="https://github.com/user-attachments/assets/44c47d3b-f884-492e-b61a-93f34236c111" />
+                         START
+                           |
+                           v
+              Inisialisasi daftar pinjaman
+                           |
+                           v
+                Tampilkan daftar awal
+                           |
+                           v
+                 Input judul buku
+                           |
+                           v
+                 Jumlah buku >= 3?
+                    /           \
+                  Ya             Tidak
+                  |                |
+                  v                v
+       "peminjaman ditolak"    Buku sudah ada?
+                  |             /        \
+                  |           Ya          Tidak
+                  |           |             |
+                  |           v             v
+                  |  "peminjaman ditolak"  Tambahkan buku
+                  |           |             |
+                  |           |             v
+                  |           |     "peminjaman berhasil"
+                  |           |             |
+                  +-----------+-------------+
+                              |
+                              v
+                   Tampilkan daftar akhir
+                              |
+                              v
+                  Input jumlah hari terlambat
+                              |
+                              v
+                    Hari terlambat <= 0?
+                       /             \
+                     Ya               Tidak
+                     |                  |
+                     v                  v
+                  Denda = 0    Denda = hari × 1.000
+                     |                  |
+                     +--------+---------+
+                              |
+                              v
+                    Tampilkan hasil denda
+                              |
+                              v
+                             END
